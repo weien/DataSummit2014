@@ -18,8 +18,7 @@
     [rootViewController fetchUpdate];
 }
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     [self fetchUpdateOnCustomTabBarController];
     [Crashlytics startWithAPIKey:@"f8325a280442dcfe187c30777d83465e38bea645"];
     return YES;
