@@ -105,7 +105,7 @@
 
 - (void) webViewDidFinishLoad:(UIWebView *)webView {
     //reset background color to something more compositing-friendly (was transparent to prevent white flash)
-    self.DTCWebView.backgroundColor = [UIColor blackColor];
+    self.DTCWebView.backgroundColor = [UIColor colorWithRed:237/255.0f green:237/255.0f blue:237/255.0f alpha:1.0f];
     self.DTCWebView.opaque = YES;
     
     //http://stackoverflow.com/a/2280767/2284713 and http://stackoverflow.com/q/2275876/2284713
