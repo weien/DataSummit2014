@@ -18,7 +18,7 @@ li {
 }
 a {
     color: #52A8D8;
-    border-bottom: 1px solid #1F3F52;
+    border-bottom: 1px solid #888; /*#1F3F52;*/
 }
 body {
     font-family: "Helvetica", Verdana, sans-serif;
