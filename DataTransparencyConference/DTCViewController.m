@@ -10,6 +10,8 @@
 #import "ExternalWebViewController.h"
 #import "DTCUtil.h"
 
+#define IS_IOS7 [[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0
+
 @interface DTCViewController () <UIWebViewDelegate>
 @end
 
@@ -128,7 +130,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationController.navigationBar setTranslucent:NO];
+    if (IS_IOS7) {
+        [self.navigationController.navigationBar setBarStyle:UIBarStyleDefault];
+        [self.navigationController.navigationBar setTranslucent:YES];
+    }
+    else {
+        [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
+    }
     
     self.DTCWebView.delegate = self;
     [self setUpPage];
