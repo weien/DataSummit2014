@@ -133,6 +133,8 @@
     if (IS_IOS7) {
         [self.navigationController.navigationBar setBarStyle:UIBarStyleDefault];
         [self.navigationController.navigationBar setTranslucent:YES];
+        [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:0.990 green:0.474 blue:0.033 alpha:1.000]];
+        [self.navigationController.navigationBar setTitleTextAttributes:@{UITextAttributeTextColor:[UIColor colorWithRed:78/255.0f green:78/255.0f blue:78/255.0f alpha:1.0f]}];
     }
     else {
         [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
