@@ -128,6 +128,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationController.navigationBar setTranslucent:NO];
+    
     self.DTCWebView.delegate = self;
     [self setUpPage];
 }
