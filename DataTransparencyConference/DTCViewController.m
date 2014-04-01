@@ -131,10 +131,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (IS_IOS7) {
+        UIColor* orangeishColor = [UIColor colorWithRed:0.990 green:0.474 blue:0.033 alpha:1.000];
+        
         [self.navigationController.navigationBar setBarStyle:UIBarStyleDefault];
         [self.navigationController.navigationBar setTranslucent:YES];
-        [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:0.990 green:0.474 blue:0.033 alpha:1.000]];
+        [self.navigationController.navigationBar setTintColor:orangeishColor];
         [self.navigationController.navigationBar setTitleTextAttributes:@{UITextAttributeTextColor:[UIColor colorWithRed:78/255.0f green:78/255.0f blue:78/255.0f alpha:1.0f]}];
+
+        [self.tabBarController.tabBar setTintColor:orangeishColor];
     }
     else {
         [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
