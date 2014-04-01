@@ -13,6 +13,8 @@
 @property BOOL splashScreenHasBeenShown;
 @end
 
+#define splashScreenDesired 0
+
 @implementation NewsViewController
 @synthesize launchImageView = _launchImageView;
 @synthesize splashScreenHasBeenShown = _splashScreenHasBeenShown;
@@ -51,7 +53,9 @@
 }
 
 - (void) viewDidAppear:(BOOL)animated {
-    [self displaySplashScreen];
+    if (splashScreenDesired) {
+        [self displaySplashScreen];
+    }
 }
 
 - (void) displaySplashScreen {
