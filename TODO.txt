@@ -1,0 +1,4 @@
+logo
+update innards
+make cell separators thinner (esp. for speakers)
+get a place to put files
