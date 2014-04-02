@@ -98,7 +98,7 @@
     [UIView setAnimationDuration:0.3];
 
     //"CurlUp" isn't ideal, but what works easiest for now
-//    [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.syncBar cache:YES];
+//    [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.syncBar cache:YES]; //looks horrible in iOS7
     [self.syncBar setFrame:CGRectMake(0, adjustmentHeight, viewSize.width, 0)];
     [UIView commitAnimations];
     //    [self.selectedViewController.view setFrame:CGRectMake(0, 0, screenSize.width, screenSize.height)];
