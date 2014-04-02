@@ -1,5 +1,3 @@
 logo
 update innards
-make cell separators thinner (esp. for speakers)
 get a place to put files
-include locations in the h3 (dark gray) bars, to make them more solid, separated from rest of content
