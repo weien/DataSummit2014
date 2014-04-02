@@ -86,7 +86,7 @@ h3 {
     float: left;
     width: 292px;
     
-	background: #292929;    
+	background: #4e4e4e;    
     
     /*background: #ffaf31; /* Old browsers */
     /*background: -moz-radial-gradient(center, circle cover,  #ffaf31 44%, #df7e00 100%); /* FF3.6+ */
@@ -103,18 +103,23 @@ h4 {
     margin-bottom: .5em;
 }
 h5 {
-    color: #E78B0A;
+	color: #ffaf31; /*#E78B0A;*/
     font-size: 11px;
     font-weight: bold;
     margin-bottom: 1.4em;
-    margin-top: -.3em;
+    margin-top: -.3em;  
+    
+    /*below is borrowed from h3*/
+	padding: 8px 14px;    
+    width: 292px;
+	background: #4e4e4e;  
 }
 .cell {
     line-height: 130%;
     padding: 16px 14px 9px 14px;
     display: block;
     font-size: 14px;
-    border-top: 1px solid #444;
+    /*border-top: 1px solid #444;*/
     clear: both;
     float: left;
     
