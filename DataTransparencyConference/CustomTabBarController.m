@@ -40,10 +40,10 @@
             NSInteger versionNumber = [latestVersion[@"data transparency"][@"current version"] integerValue];
             NSURL* previousVersionFile = [DTCUtil reformedURLWithCorrectDirectoryUsingPathComponent:@"_site/version.txt"];
             NSInteger previousVersionNumber = [[NSString stringWithContentsOfURL:previousVersionFile encoding:NSUTF8StringEncoding error:&error] integerValue];
-            NSLog(@"new version is %d, previous version is %d", versionNumber, previousVersionNumber);
+            NSLog(@"new version is %ld, previous version is %ld", (long)versionNumber, (long)previousVersionNumber);
             
             if (versionNumber > previousVersionNumber) {
-                NSLog(@"new (%d) is greater than previous version (%d), downloading update", versionNumber, previousVersionNumber);
+                NSLog(@"new (%ld) is greater than previous version (%ld), downloading update", (long)versionNumber, (long)previousVersionNumber);
                 [self showCustomSyncBar];
                 [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
                 

@@ -29,10 +29,10 @@
     //https://gist.github.com/ardalahmet/1153867 to check for 403 errors
     if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
-        int status = [httpResponse statusCode];
+        NSInteger status = [httpResponse statusCode];
         
         if (status == 403) {
-            NSLog(@"Error. http status code: %d", status);
+            NSLog(@"Error. http status code: %ld", (long)status);
             //deleting cookies and clearing cache doesn't do anything for us
             
             //Display fail message
