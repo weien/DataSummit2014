@@ -103,6 +103,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //iOS 7 -- toolbar isn't working, but this isn't high priority right now
+//    [self.navigationController setToolbarHidden:NO];
+//    [self.navigationController.toolbar setItems:@[self.backButton, self.forwardButton]];
+    
     self.externalLinkViewer.delegate = self;
     if (self.urlToDisplay) {
         [self initSpinner];        
