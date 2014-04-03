@@ -1,3 +1,0 @@
-logo
-update innards
-get a place to put files
