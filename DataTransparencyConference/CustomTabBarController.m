@@ -20,7 +20,7 @@
 @synthesize syncBar = _syncBar;
 
 - (void) fetchUpdate {
-    NSURL* versionDataLink = [NSURL URLWithString:@"http://weien.neocities.org/data_transparency_version.json"];
+    NSURL* versionDataLink = [NSURL URLWithString:@"https://dl.dropboxusercontent.com/u/8902155/data_transparency_version.json"];
     
 
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
